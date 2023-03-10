@@ -1,7 +1,7 @@
 #list comprehension
 #exercise 1
 
-names=["john smith","jay santi","eva  "]
+names=["john smith","jay santi","eva"]
 new_names=[i.title() for i in names]
 print(new_names)
 
