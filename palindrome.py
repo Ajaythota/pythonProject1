@@ -8,7 +8,7 @@ def isPalindrome(a,b):
         str1="Not a palindrome"
     return str1
 
-s1=input("enter  1st value:")
-s2=input("enter 2nd value:")
+s1=input("Enter  1st value:")
+s2=input("Enter 2nd value:")
 print(isPalindrome(s1,s2))
 
