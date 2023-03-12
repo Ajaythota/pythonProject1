@@ -18,8 +18,8 @@ vowels = ['a', 'e', 'i', 'o', 'u']
 str1 = input("enter string")
 str2 = ''
 str3 = ''
-for i in vowels:
-     if i in str1:
+for i in str1:
+     if i in vowels:
           str2 = str2 + i
      else:
           str3 = str3 + i
@@ -33,3 +33,11 @@ y=['a','b','c']
 for i in x:
     for j in y:
         print(i,j)
+
+#Random numbers
+import random
+f=int(input("enter the first number"))
+s=int(input("enter the second number"))
+print(random.randint(f,s))
+
+

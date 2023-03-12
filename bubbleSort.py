@@ -14,6 +14,11 @@ print(n) #original list changed
 #bubble sort
 b=[6,1,4,10,-2,0,345,15]
 def bubbleSort(args):
+    """  bubbleSort execution in python
+
+    :param args:
+    :return:
+    """
     for i in range(len(args)):
         for j in range(0,len(args)-i-1):
             if(args[j]>args[j+1]):
