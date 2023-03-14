@@ -5,8 +5,14 @@ pdf = FPDF(orientation="P", unit="mm", format="A4")
 for index, row in df.iterrows():
     #pdf.add_page(df["Pages"])
     pdf.add_page()
+  #se the header
     pdf.set_font(family="times", style="B", size=12)
     pdf.cell(w=0, h=12, txt=row["Topic"], align="L", ln=1, border=1)
+    #set the footer
+    pdf.ln(265)
+    pdf.set_font(family="times", style="B", size=12)
+    pdf.cell(w=0, h=12, txt=row["Topic"], align="R", ln=1, border=1)
+
     for i in range(row["Pages"] -1):
         pdf.add_page()
 
