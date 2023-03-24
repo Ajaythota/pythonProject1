@@ -13,12 +13,12 @@ for files in myfiles:
     fileName=Path(files).stem.capitalize()
     pdf.add_page()
     pdf.set_font(family="times", style="B", size=12)
-    pdf.cell(w=50, h=12, txt=fileName, align="L")
+    pdf.cell(w=50, h=12, txt=fileName, align="L",ln=1)
     with open(files, "r") as file:
         #pdf.line(10,50,10,200)
-        content=file.readline()
-        print(content)
+        content=file.read()
+        #print(content)
         pdf.set_font(family="times", style="I", size=8)
-        pdf.cell(w=0, h=50, txt=content, align="R")
+        pdf.multi_cell(w=0, h=6, txt=content, align="L")
 
 pdf.output("TextPDF/animal.pdf")
